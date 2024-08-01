@@ -1,0 +1,90 @@
+What is Exception Handling : 
+
+It is a mechanism of handling the runtime errors during execution of the program. 
+
+In SpringBoot, we can implement exception handling by using 
+
+@ExceptionHandler annotation
+
+@ControllerAdvice annotation
+
+Employ(EmpId,Empname,Salary,SalDate,Dept,MgrId)
+
+E1,Srinath,84834,'Aug-2024','Java',1
+E1,Srinath,83844,'Sep-2024','Java'1
+
+We need the help of composite key. as making EmpID+SalDate as 
+composite primary key
+
+Then EmpId can exist multiple times, Saldate exists multiple times
+
+but combination not to be repeated. 
+
+Why we prefer MVC ???
+
+In Traditional web applications, we have 3 layers as
+
+UI Business Layer and Data Layer : All these 3 layers are connected in serial format.
+
+Changes in one layer will have huge impact on another layer. 
+
+This problem we need to overcome as 
+
+I want to make my application as loosely coupled and tightly integrated, then we need the help of MVC. 
+
+MVC can be done w.r.t. TDD env (Test Driven Development) 
+
+Model -> Business Logic (whatever business logic we need to do then we need write in Model)
+
+View  -> Contains all the UI related code, input pages, error message pages, notification pages
+
+Controller -> Acts as a glue between model and view.  Based on action path, you need to redirect to any page, that would be specified by using controller. 
+
+JdbcTemplate : Performs jdbc operations. 
+
+___________________________________________________________________________________________________________________________
+
+Spring Security : is a framework that which provides various features like authentication, authorization to create a securre spring enterprise application. 
+
+Because, here we need to protect pages or urls from directly accessing. 
+
+Authentication : It is a process of giving permission to access resource after providing valid credentials...
+
+Authorization  : It is a process in which the authenticated user has permission to access the particular resource portion. 
+
+
+
+Authentication is process of knowing and identifying the user that wants to access, authorization is process to allow authority to perform actions in the application. 
+
+
+Spring Framework will provide various levels of authentication modes known as 
+
+	-> Http Basic AUthentication
+
+	-> XML based authentication
+
+	-> Java Based Authentication
+
+	-> Form Based Authentication 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
