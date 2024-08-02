@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: dell
+Build-Jdk: 22.0.1
+Implementation-Title: spring-security-database-authentication-example
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: net.javaguides.springsecurity
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/spring-security-database-authentication-example
+Created-By: Maven Integration for Eclipse
+
