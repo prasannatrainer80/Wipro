@@ -1,55 +1,32 @@
+
 <html>
     <head>
-
+        <style>
+            .flex-container {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-around;
+                background-color: #f1f1f1;
+            }
+            .flex-container > div {
+                background-color: DodgerBlue;
+                color: white;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        </style>
     </head>
 <body>
-    <table border="3" align="center">
-        <tr>
-            <th>Test</th>
-            <th>Report</th>
-            <th>Nagaraju</th>       
-            <th>Hemanth</th>
-            <th>Lakshmi</th>
-        </tr>
-        <tr>
-            <th rowspan="2">BP</th>
-            <td>Actual</td>
-            <td>140</td>
-            <td>140</td>
-            <td>153</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>120</td>
-            <td>120</td>
-            <td>120</td>
-        </tr>
-        <tr>
-            <th rowspan="2">Sugar</th>
-            <td>Actual</td>
-            <td>233</td>
-            <td>140</td>
-            <td>166</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>140</td>
-            <td>140</td>
-            <td>140</td>
-        </tr>
-        <tr>
-            <th rowspan="2">BMI</th>
-            <td>Actual</td>
-            <td>67</td>
-            <td>55</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Normal</td>
-            <td>36</td>
-            <td>36</td>
-            <td>36</td>
-        </tr>
-    </table>
+    <div class="flex-container">
+        <div style="order:6;">Division 1</div>
+        <div style="order:4">Division 2</div>
+        <div style="order:5">Division 3</div>  
+        <div style="order:2">Division 4</div>
+        <div style="order:1">Division 5</div>
+        <div style="order:3">Division 6</div>  
+      </div>      
 </body>
 </html>

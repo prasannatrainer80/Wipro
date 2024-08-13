@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            var questions = [
+                "1. What is HTML",
+                "2. What is WWW",
+                "3. Object Oriented Programming",
+                "4. JPA Stands For",
+                "5. Spring Vs Spring Boot"
+            ]
+            var questionNo = 0;
+            var totalQuestions = questions.length;
+            function loadQuestion() {
+                document.getElementById("question").innerHTML = questions[questionNo];
+            }
+            function nextQuestion() {
+                questionNo++;
+                if (questionNo == totalQuestions) {
+                    questionNo = totalQuestions -1;
+                }
+                loadQuestion();
+            }
+
+            function prevQuestion() {
+                questionNo--;
+                if (questionNo < 0) {
+                    questionNo = 0;
+                }
+                loadQuestion();
+            }
+        </script>
+    </head>
+<body onload="loadQuestion()">
+    <p id="question"></p> <br/><br/>
+    <input type="button" value="Next" onclick="nextQuestion()" /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Previous" onclick="prevQuestion()" />
+</body>
+</html>

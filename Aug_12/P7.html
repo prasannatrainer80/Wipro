@@ -1,14 +1,26 @@
 <html>
     <head>
-
+        <style>
+            div.main {
+                display: grid;
+                background-color: gray;
+                padding: 5px;
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+            div.content {
+                background-color: lightgray;  
+                border: 1px solid white;  
+                padding: 20px;  
+                font-size: 30px;  
+                text-align: center;  
+            }
+        </style>
     </head>
 <body>
-    <a href="P1.html" target="_blank">Page 1</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="P2.html">Page 2</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="P3.html">Page 3</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="http://www.google.com">Google Page</a>
+    <div class="main">
+        <div class="content">Welcome</div>
+        <div class="content">Hello World</div>
+        <div class="content">Sonix</div>
+    </div>
 </body>
 </html>

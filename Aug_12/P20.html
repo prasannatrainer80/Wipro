@@ -1,33 +1,29 @@
 <html>
     <head>
+        <style>
+            .flex-container {
+                display: flex;
+                justify-content: space-around;
+                background-color: DodgerBlue;
+         }
+        .flex-container > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
 
+        </style>
     </head>
 <body>
-    <form name="frmData">
-        <table border="3" align="center">
-            <tr>
-                <th colspan="2">Login Page</th>
-               
-            </tr>
-            <tr>
-                <th>User Name</th>
-                <td>
-                    <input type="text" name="userName" />
-                </td>
-            </tr>
-            <tr>
-                <th>Password</th>
-                <td>
-                    <input type="password" name="passWord" />
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <input type="submit" value="Login" />
-                </th>
-               
-            </tr>
-        </table>
-    </form>
+    <div class="flex-container">
+        <div>Division 1</div>
+        <div>Division 2</div>
+        <div>Division 3</div>
+        <div>Division 4</div>
+        <div>Division 5</div>  
+      </div>      
 </body>
 </html>
