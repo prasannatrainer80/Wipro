@@ -1,0 +1,55 @@
+React component Life-Cycle :
+______________________________
+
+	Every component creation process involves various lifecycle methods. This is known as Component's lifecycle. 
+
+React have 4 phases in component life cycle as
+
+1) Initial Phase : It is the birth phases of the lifecyle of ReactJS component.  Here, the component starts its journey on a way
+to the DOM. In this phase, a component contains the default props and initial state. These default properties are done in the
+constructor. 
+
+getDefaultPros() 
+
+getInitialState()
+
+2) Mounting Phase : In this phase, the instance of the component created and inserted into DOM. It consists of 
+
+
+	-> componentWillMount() : This is invoked automatically before a component gets rendered in to DOM. But if you use
+		setState() the component will not re-render.
+
+	-> componentDidMount() : This method invoked immediately after component gets renders and placed on the DOM. This method to be written whenever we need to bind any external data to be component before render needs to initlize the data, then we need to write the code in componentDidMount().
+
+	-> render() : this method defined in each and every component, it is responsible for returning a single root HTML node 
+		element, if you don't want to render anything, you can return null. 
+
+3) Updating Phase : 
+
+	It is the next phase of life cycle of react component.  Here we get new props and change state. This phase alos allows you to handle user interaction and provide communication with the components hierarchy.  The main aim of this phase is to ensure that the  component displaying the latest versionof itself.  
+	
+	componentWillReceiveProps() : If you want to update the changes w.r.t. prop changes, then we need the help of this method. 
+
+	shouldComponentUpdate() : Is there any changes are there w.r.t. new controls or data to be added to the page, w.r.t. the changes in DOM will taken place. If this method returns true, the component will update. 
+
+	componentWillUpdate() : Here the component will update but the state values are not updated. 
+
+	render()
+
+	componentDidUpdate() : Any final code to be written that we need to write here. 
+
+4) Unmounting Phase
+
+_________________________________________________________________________________________________________
+
+React Hooks are new feature introduced in React allows you to use state and other react features without writing a class. 
+
+Hooks are functions in which Reaect state and lifecycle features from function components.
+
+Hooks are similar to javascript functions but you need to follow these two rules when using them.  Hooks rule ensures that all the stateful logic in component visible to source code.
+
+1) useState : Used to maintain the state of the given control. 
+
+2) useEffect : It is similar to componentWillMount()/componentDidMount() in class components. 
+
+
