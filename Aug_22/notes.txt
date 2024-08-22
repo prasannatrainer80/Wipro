@@ -1,0 +1,44 @@
+React Error Boundaries 
+
+Error boundaries are react components which catch javascript errors anywhere in our app, log those errors, and
+display fallback UI, it does not break the whole app component tree and only renders the fallback UI whenever an error occurs. 
+
+Error Boundaries catch errors during rendering in component lifecycle methods, and
+constructors of the whose tree
+
+Normally in react application, we may get various errors as 
+
+Event Handlers
+Asynchronous Code 
+Server-Side rendering
+Errors are thrown in the error boundary itself rather than its children
+
+For that create a class or functional component and name it as ErrorBoundary 
+
+in that define predefined methods as 
+
+static getDerivedStateFromError(error) { … }
+
+componentDidCatch(error, info) { 
+logErrorToMyService(error,info);
+}
+
+Now for checking error, we need to specify in the state as
+
+if (this.state.hasError) {
+….
+….
+}
+
+Now for which component we need to apply error boundary to be specified in nested as
+
+<ErrorBoundary>
+  <LoginComponent />
+</ErrorBoundary>
+
+_____________________________________________________________________________________________________________
+
+React Context allows you declare global values that can be accessable across various components... Sometimes if you want to use the values we are using props but it is not the healthy approach, to overcome this we need the help of React Context.
+
+Context used to share data which can be considered as "global" for react components tree and use that data where needed. That can be either username or theme or notification message or anything we can use in that. 
+
