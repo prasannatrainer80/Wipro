@@ -6,3 +6,10 @@ npm i yup
 npm install formik --save
 
 npm i @hookform/resolvers
+
+copy from my package.json file to your file flux dependency
+
+then 
+
+npm install --force
+
