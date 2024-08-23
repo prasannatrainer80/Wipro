@@ -1,0 +1,8 @@
+
+npm i react-hook-form
+
+npm i yup
+
+npm install formik --save
+
+npm i @hookform/resolvers
