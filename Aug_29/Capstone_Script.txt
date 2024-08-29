@@ -1,0 +1,28 @@
+drop database if exists capstone;
+create database capstone;
+use capstone;
+create table Bank
+(
+    AccountNo INT auto_increment Primary Key,
+    FirstName varchar(30),
+    LastName varchar(30),
+    city varchar(30),
+    State varchar(30),
+    Email varchar(30),
+    UserName varchar(30),
+    passCode varchar(255),
+    MobileNo varchar(30),
+    Balance numeric(9,2),
+    CheqFacil varchar(30),
+    accountType varchar(30),
+    Status varchar(30) DEFAULT 'ACTIVE',
+    dateOfOpen DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+Create Table Transactions
+(
+    TranId INT AUTO_INCREMENT PRIMARY KEY,
+    TranDate  DATETIME DEFAULT CURRENT_TIMESTAMP,
+    TranAmount numeric(9,2),
+    TranType varchar(10)
+);
